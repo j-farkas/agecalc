@@ -4,9 +4,13 @@ export class Agecalc{
   }
 
   GetEarthAge(){
+    let age = 0;
+    //if()
+
+    age += new Date().getFullYear() - this.age.getFullYear();
     return age;
   }
 }
 
-var age = new Agecalc(new Date('December 17, 1995'));
+const age = new Agecalc(new Date());
 age.GetEarthAge();
