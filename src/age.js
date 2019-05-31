@@ -4,6 +4,11 @@ export class Agecalc{
     this.msPerDay = 86400000;
   }
 
+  GetDeath(){
+    let lifespan = this.age.getFullYear() + 80;
+    return new Date(lifespan, this.age.getMonth(), this.age.getDay()+1);
+
+  }
   GetEarthAge(){
     const year = 365.26;
     let days = Math.floor((new Date() - this.age) / this.msPerDay);
