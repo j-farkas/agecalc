@@ -6,8 +6,8 @@ import 'bootstrap';
 $(document).ready(function(){
   $(".container").append("<div class='grid-container'>");
 
-  for(let i = 0; i < 43; i++){
-  $(".grid-container").append("<div class='grid-item "+i+"'><img class ="+i+"</div>");
+  for(let i = 0; i < 42; i++){
+  $(".grid-container").append("<div class='grid-item spot"+i+"'>◉</div>");
 }
 $(".container").append("</div>");
   });
