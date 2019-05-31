@@ -13,7 +13,9 @@
   align-items: center;
   border: 10px solid yellow;
 }
-
+.winner{
+  text-align: center;
+}
 .red{
   color: red;
 }

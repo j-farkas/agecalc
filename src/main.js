@@ -14,7 +14,9 @@ function attachListeners() {
           $("#a"+i).addClass(connect.getTurn());
           console.log(i);
           connect.board[i] = connect.getTurn();
-          connect.checkWinner(i);
+          if(connect.checkWinner(i) === true){
+            $(".winner").text(connect.getTurn() + " wins!");
+          }
           connect.turn++;
           break;
         }
