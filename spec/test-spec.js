@@ -58,35 +58,35 @@ describe('Agecalc', function() {
     let age = new Agecalc(new Date('May 31, 1995'));
 
      console.log(age);
-     expect(age.GetMercuryAgeLeft()).toEqual(99);
+     expect(age.GetMercuryAgeLeft()).toEqual(233);
   });
 
   it('should output the users lifespan remaining on venus' , function() {
     let age = new Agecalc(new Date('May 31, 1995'));
 
      console.log(age);
-     expect(age.GetVenusAgeLeft()).toEqual(39);
+     expect(age.GetVenusAgeLeft()).toEqual(91);
   });
 
   it('should output the users lifespan remaining on mars' , function() {
     let age = new Agecalc(new Date('May 31, 1995'));
 
      console.log(age);
-     expect(age.GetMarsAgeLeft()).toEqual(12);
+     expect(age.GetMarsAgeLeft()).toEqual(30);
   });
 
   it('should output the users lifespan remaining on jupiter' , function() {
     let age = new Agecalc(new Date('May 31, 1995'));
 
      console.log(age);
-     expect(age.GetJupiterAgeLeft()).toEqual(2);
+     expect(age.GetJupiterAgeLeft()).toEqual(5);
   });
 
   it('should output the users lifespan remaining on saturn' , function() {
     let age = new Agecalc(new Date('May 31, 1995'));
 
      console.log(age);
-     expect(age.GetSaturnAgeLeft()).toEqual(0);
+     expect(age.GetSaturnAgeLeft()).toEqual(2);
   });
 
   it('should output the year the user turns 80' , function() {
