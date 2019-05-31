@@ -12,7 +12,6 @@ export class Agecalc{
         age++;
       }
     }
-
     age += new Date().getFullYear() - this.age.getFullYear();
     return age;
   }

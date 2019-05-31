@@ -13,5 +13,14 @@ describe('Agecalc', function() {
     // // expect(romanIn(1)).not.toEqual("X");
   });
 
+  it('should output the users age on mercury' , function() {
+    let age = new Agecalc(new Date('May 31, 1995'));
+
+     console.log(age);
+     expect(age.GetMercuryAge()).toEqual(103);
+    // expect(arr.length).toEqual(9);
+    // // expect(romanIn(1)).not.toEqual("X");
+  });
+
 
 });
