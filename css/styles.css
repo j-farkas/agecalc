@@ -4,8 +4,12 @@
 }
 
 .grid-item{
+  font-size: 60px;
+  display: flex;
   height: 100px;
   width: auto;
-  color: white;
+  color: black;
+  justify-content: center;
+  align-items: center;
   border: 2px solid black;
 }
