@@ -7,7 +7,7 @@ $(document).ready(function(){
   $(".container").append("<div class='grid-container'>");
 
   for(let i = 0; i < 43; i++){
-  $(".grid-container").append("<div class='grid-item i'>"+i+"</div>");
+  $(".grid-container").append("<div class='grid-item "+i+"'><img class ="+i+"</div>");
 }
 $(".container").append("</div>");
   });
