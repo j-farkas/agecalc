@@ -43,7 +43,6 @@ export class Connect{
         winner[this.board[i]]++;
       }if(winner[this.board[move]] === 4){
         this.gameOver = true;
-        console.log("left");
         return this.gameOver;
       }
     }
@@ -56,7 +55,6 @@ export class Connect{
       }
       if(winner[this.board[move]] === 4){
         this.gameOver = true;
-        console.log("upeft");
         return this.gameOver;
       }
     }
@@ -69,7 +67,6 @@ export class Connect{
       }
       if(winner[this.board[move]] === 4){
         this.gameOver = true;
-        console.log("up");
         return this.gameOver;
       }
     }
@@ -82,7 +79,6 @@ export class Connect{
       }
       if(winner[this.board[move]] === 4){
         this.gameOver = true;
-        console.log("upright");
         return this.gameOver;
       }
     }
@@ -95,7 +91,6 @@ export class Connect{
       }
       if(winner[this.board[move]] === 4){
         this.gameOver = true;
-        console.log("downright");
         return this.gameOver;
       }
     }
@@ -108,7 +103,6 @@ export class Connect{
       }
       if(winner[this.board[move]] === 4){
         this.gameOver = true;
-        console.log("downleft");
         return this.gameOver;
       }
     }
@@ -121,12 +115,11 @@ export class Connect{
       }
       if(winner[this.board[move]] === 4){
         this.gameOver = true;
-        console.log("right");
         return this.gameOver;
       }
     }
   }
 }
-
+//Linter doesn't like when this isn't here.
 const connect = new Connect();
 connect.getTurn();

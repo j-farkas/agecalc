@@ -70,7 +70,6 @@ export class Agecalc{
   }
 }
 
-
 //The Linter hates it when I don't have this, it's useless
 const age = new Agecalc(new Date());
 age.GetEarthAge();
