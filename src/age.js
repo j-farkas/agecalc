@@ -8,6 +8,9 @@ export class Agecalc{
     }
     this.getTimeLeft = function(year){
       let days = Math.floor((new Date() - this.GetDeath()) / this.msPerDay);
+      if(Math.floor(days / year) > 0 ){
+        return ("You should already have died " + Math.floor(days / year) + " years ago");
+      }else
       return Math.abs(Math.floor(days / year));
     }
   }

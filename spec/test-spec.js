@@ -89,6 +89,13 @@ describe('Agecalc', function() {
      expect(age.GetSaturnAgeLeft()).toEqual(2);
   });
 
+  it('should output you should have already died' , function() {
+    let age = new Agecalc(new Date('May 31, 1905'));
+
+     console.log(age);
+     expect(age.GetMercuryAgeLeft()).toEqual("You should already have died 141 years ago");
+  });
+
   it('should output the year the user turns 80' , function() {
     let age = new Agecalc(new Date('January 1, 1995'));
 
