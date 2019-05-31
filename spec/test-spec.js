@@ -4,7 +4,6 @@ describe('Agecalc', function() {
 
   it('should output the users age' , function() {
     let age = new Agecalc(new Date('December 17, 1995'));
-
      console.log(age);
      expect(age.GetEarthAge()).toEqual(23);
      age = new Agecalc(new Date('January 31, 1995'));
@@ -13,14 +12,12 @@ describe('Agecalc', function() {
 
   it('should output the users age on mercury' , function() {
     let age = new Agecalc(new Date('May 31, 1995'));
-
      console.log(age);
      expect(age.GetMercuryAge()).toEqual(99);
   });
 
   it('should output the users age on venus' , function() {
     let age = new Agecalc(new Date('May 31, 1995'));
-
      console.log(age);
      expect(age.GetVenusAge()).toEqual(39);
   });
@@ -41,13 +38,11 @@ describe('Agecalc', function() {
 
   it('should output the users age on saturn' , function() {
     let age = new Agecalc(new Date('May 31, 1995'));
-
      console.log(age);
      expect(age.GetSaturnAge()).toEqual(0);
   });
   it('should output the users lifespan remaining' , function() {
     let age = new Agecalc(new Date('December 17, 1995'));
-
      console.log(age);
      expect(age.GetEarthAgeLeft()).toEqual(57);
      age = new Agecalc(new Date('January 31, 1995'));
@@ -56,35 +51,30 @@ describe('Agecalc', function() {
 
   it('should output the users lifespan remaining on mercury' , function() {
     let age = new Agecalc(new Date('May 31, 1995'));
-
      console.log(age);
      expect(age.GetMercuryAgeLeft()).toEqual(233);
   });
 
   it('should output the users lifespan remaining on venus' , function() {
     let age = new Agecalc(new Date('May 31, 1995'));
-
      console.log(age);
      expect(age.GetVenusAgeLeft()).toEqual(91);
   });
 
   it('should output the users lifespan remaining on mars' , function() {
     let age = new Agecalc(new Date('May 31, 1995'));
-
      console.log(age);
      expect(age.GetMarsAgeLeft()).toEqual(30);
   });
 
   it('should output the users lifespan remaining on jupiter' , function() {
     let age = new Agecalc(new Date('May 31, 1995'));
-
      console.log(age);
      expect(age.GetJupiterAgeLeft()).toEqual(5);
   });
 
   it('should output the users lifespan remaining on saturn' , function() {
     let age = new Agecalc(new Date('May 31, 1995'));
-
      console.log(age);
      expect(age.GetSaturnAgeLeft()).toEqual(2);
   });
@@ -98,8 +88,6 @@ describe('Agecalc', function() {
 
   it('should output the year the user turns 80' , function() {
     let age = new Agecalc(new Date('January 1, 1995'));
-
-
      expect(age.GetDeath().getFullYear()).toEqual(2075);
   });
 
