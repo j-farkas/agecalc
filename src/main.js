@@ -12,6 +12,7 @@ function attachListeners() {
       for(let i = column % 7; i < 42; i+=7){
         if($("#a"+i)[0].classList.contains("red") === false && $("#a"+i)[0].classList.contains("blue") === false){
           $("#a"+i).addClass(connect.getTurn());
+          console.log(i);
           connect.board[i] = connect.getTurn();
           connect.checkWinner(i);
           connect.turn++;
