@@ -7,6 +7,8 @@ describe('Agecalc', function() {
 
      console.log(age);
      expect(age.GetEarthAge()).toEqual(25);
+     age = new Agecalc(new Date('May 31, 1995'));
+     expect(age.GetEarthAge()).toEqual(25);
     // expect(arr.length).toEqual(9);
     // // expect(romanIn(1)).not.toEqual("X");
   });
