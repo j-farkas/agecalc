@@ -20,12 +20,11 @@ function attachListeners() {
         }
       }
     }
-  })
+  });
 }
 $(document).ready(function(){
   attachListeners();
   $(".container").append("<div class='grid-container'>");
-
   for(let i = 41; i >=0 ; i--){
   $(".grid-container").append("<div class='grid-item' id='a"+i+"'>◉</div>");
 }
