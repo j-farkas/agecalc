@@ -1,17 +1,23 @@
-# _{Application Name}_
+# _Age Calculator_
 
-#### _{Brief description of application}, {Date of current version}_
+#### _Calculates ages on different planets_
 
-#### By _**Ryan McLean**_
+#### By _**Jared Farkas**_
 
 ## Description
 
-_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
+_Calculates the age of a person in different yearly cycles_
 
 ## Setup/Installation Requirements
 
-* _No Setup/Installation Required_
+* _install the packages listed in the package file using npm install, then start the server on the localhost using npm run start and run it on the localhost_
 
+## Specs
+A user inputs their birthday and selects Mercury
+A user inputs their birthday and selects Venus
+A user inputs their birthday and selects Mars
+A user inputs their birthday and selects Jupiter
+A user inputs their birthday and selects Saturn
 
 ## Known Bugs
 
@@ -19,14 +25,14 @@ _There are no known bugs._
 
 ## Support and contact details
 
-_Please contact Ryan McLean at mcleanrs@comcast.net._
+_Please contact Jaredmfarkas@gmail.com_
 
 ## Technologies Used
 
-_{Tell me about the languages and tools you used to create this app. Assume that I know you probably used HTML and CSS. If you did something really cool using only HTML, point that out.}_
+_html, javascript, karma, jasmine_
 
 ### License
 
 *This Software is Licensed under the MIT License.*
 
-Copyright (c) 2019 **_Ryan McLean_**
+Copyright (c) 2019 **_Jared Farkas_**
