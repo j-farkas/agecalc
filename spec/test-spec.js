@@ -1,16 +1,15 @@
-import { Game } from './../src/rpg.js';
+import { Agecalc } from './../src/age.js';
 
-describe('Game', function() {
+describe('Agecalc', function() {
 
-  // it('should output the players strength' , function() {
-  //   var game = new Game();
-  //   game.environment = "dark";
-  //    var str = game.player.stats.strength;
-  //    console.log(str);
-  //    expect(game.abilities.punch.damage(game.player)).toEqual(str);
-  //   // expect(arr.length).toEqual(9);
-  //   // // expect(romanIn(1)).not.toEqual("X");
-  // });
+  it('should output the users age' , function() {
+    var age = new Agecalc(new Date('December 17, 1995'));
+
+     console.log(age);
+     expect(age).toEqual(24);
+    // expect(arr.length).toEqual(9);
+    // // expect(romanIn(1)).not.toEqual("X");
+  });
 
 
 });
