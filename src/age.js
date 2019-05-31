@@ -2,6 +2,10 @@ export class Agecalc{
   constructor(age){
     this.age = age;
     this.msPerDay = 86400000;
+    this.getAge = function(year){
+      let days = Math.floor((new Date() - this.age) / this.msPerDay);
+      return Math.floor(days / year);
+    }
   }
 
   GetDeath(){
@@ -11,43 +15,36 @@ export class Agecalc{
   }
   GetEarthAge(){
     const year = 365.26;
-    let days = Math.floor((new Date() - this.age) / this.msPerDay);
-    return Math.floor(days / year);
+    return this.getAge(year);
   }
   GetMercuryAge(){
     const year = 87.97;
-    let days = Math.floor((new Date() - this.age) / this.msPerDay);
-    return Math.floor(days / year);
+    return this.getAge(year);
   }
   GetVenusAge(){
     const year = 224.7;
-    let days = Math.floor((new Date() - this.age) / this.msPerDay);
-    return Math.floor(days / year);
+    return this.getAge(year);
   }
   GetMarsAge(){
     const year = 685.75;
-    let days = Math.floor((new Date() - this.age) / this.msPerDay);
-    return Math.floor(days / year);
+    return this.getAge(year);
   }
   GetJupiterAge(){
     const year = 4332.59;
-    let days = Math.floor((new Date() - this.age) / this.msPerDay);
-    return Math.floor(days / year);
+    return this.getAge(year);
   }
   GetSaturnAge(){
     const year = 10759;
-    let days = Math.floor((new Date() - this.age) / this.msPerDay);
-    return Math.floor(days / year);
+    return this.getAge(year);
   }
   GetEarthAgeLeft(){
     const year = 365.26;
-    let days = Math.floor((new Date() - this.age) / this.msPerDay);
-    return 80 - Math.floor(days / year);
+    let days = Math.floor((new Date() - this.GetDeath()) / this.msPerDay);
+    return Math.abs(Math.floor(days / year));
   }
   GetMercuryAgeLeft(){
     const year = 87.97;
-    let days = Math.floor((new Date() - this.age) / this.msPerDay);
-    return Math.floor(days / year);
+    return this.getAge(year);
   }
   GetVenusAgeLeft(){
     const year = 224.7;
